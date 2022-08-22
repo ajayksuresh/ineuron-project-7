@@ -5,7 +5,7 @@ html,body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     font-family: 'Poppins';
     height: 100vh;
 }
@@ -171,4 +171,57 @@ img.headphones{
     position: relative;
     top: -350px;
     right: -145px;
+}
+
+@media screen and (max-width: 975px) {  
+
+    nav{
+        justify-content: space-around;
+    }
+    .action-icons{
+        display: none;
+    }
+    .nav-items{
+        justify-content: flex-end;
+
+    }
+    .intro-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-section{
+        max-height: max-content;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 630px) {  
+    nav{
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        margin: auto 20px;
+    }
+    .nav-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 10%;
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width: 500px) {  
+    nav{
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        margin: auto 20px;
+        width: 80%;
+    }
+
+    .nav-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 10%;
+        padding: 10px;
+    }
 }
